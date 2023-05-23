@@ -1,6 +1,8 @@
 # ML-12-Module-75 [Final Project Part 2]
 
 * 75-1 Dynamic Page Title By Route Using React Helmet
+>> React Helmet : `npm i react-helmet-async`
+* 75-2 Implement Cover With With Blur Parallax Using React Parallax
 
 
 ## react-boilerplate-2
