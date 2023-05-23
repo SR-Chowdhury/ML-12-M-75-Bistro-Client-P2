@@ -2,6 +2,7 @@ import React from 'react';
 import './FeaturedSection.css';
 import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
 import img from '../../../assets/home/featured.jpg';
+import PrimaryBtn from '../../../Components/PrimaryBtn/PrimaryBtn';
 
 const FeaturedSection = () => {
     return (
@@ -17,7 +18,7 @@ const FeaturedSection = () => {
                     <p className='feature-info'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat possimus obcaecati aliquam, iusto, quidem rerum sapiente impedit repellat, harum nostrum voluptate exercitationem accusantium doloremque eos maxime excepturi accusamus vitae!
                     </p>
-                    <button className="primaryBtn">Read More</button>
+                    <PrimaryBtn btnInfo={'Read More'}/>
                 </div>
             </div>
         </section>

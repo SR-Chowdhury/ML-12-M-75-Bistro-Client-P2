@@ -34,16 +34,3 @@
     font-size: 14px;
     color: #FFFFFF;
 }
-
-.primaryBtn {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    color: #FFFFFF;
-    line-height: 24px;
-    padding: 20px 30px;
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: 3px solid #FFFFFF;
-    border-radius: 8px;
-}
