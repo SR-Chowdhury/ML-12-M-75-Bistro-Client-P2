@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Menu from '../../../Components/Menu/Menu';
 import './PopularMenu.css';
 import PrimaryBtn from '../../../Components/PrimaryBtn/PrimaryBtn';
+import useMenu from '../../../Hooks/useMenu';
 
 const PopularMenu = () => {
 
@@ -10,23 +11,14 @@ const PopularMenu = () => {
         borderBottom: '3px solid #1F2937'
     };
 
-    const [menu, setMenu] = useState([]);
-
-    useEffect(() => {
-        fetch('menu.json')
-            .then(res => res.json())
-            .then(data => {
-                const popular = data.filter(item => item.category === 'popular');
-                setMenu(popular);
-            })
-            .catch(err => console.log(err.message))
-    }, []);
+    const [menu] = useMenu();
+    const popular = menu?.filter(item => item.category === 'popular');
 
     return (
         <section>
             <div className="popularMenuContainer">
                 {
-                    menu.map((item, index) => <Menu key={index} item={item} />)
+                    popular.map((item, index) => <Menu key={index} item={item} />)
                 }
             </div>
             <div className='text-center mb-5'>
