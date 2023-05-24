@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Menu from '../../../Components/Menu/Menu';
 import './PopularMenu.css';
 import PrimaryBtn from '../../../Components/PrimaryBtn/PrimaryBtn';

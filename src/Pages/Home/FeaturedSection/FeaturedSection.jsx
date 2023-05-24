@@ -5,6 +5,12 @@ import img from '../../../assets/home/featured.jpg';
 import PrimaryBtn from '../../../Components/PrimaryBtn/PrimaryBtn';
 
 const FeaturedSection = () => {
+
+    const customStyle = {
+        color: 'white',
+        borderBottom: '3px solid white' 
+    };
+
     return (
         <section className='featuredContainer bg-fixed'>
             <SectionTitle subHeading={'Check it Out'} Heading={'From Our Menu'} />
@@ -18,7 +24,7 @@ const FeaturedSection = () => {
                     <p className='feature-info'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat possimus obcaecati aliquam, iusto, quidem rerum sapiente impedit repellat, harum nostrum voluptate exercitationem accusantium doloremque eos maxime excepturi accusamus vitae!
                     </p>
-                    <PrimaryBtn btnInfo={'Read More'}/>
+                    <PrimaryBtn btnInfo={'Read More'} styles={customStyle}/>
                 </div>
             </div>
         </section>
