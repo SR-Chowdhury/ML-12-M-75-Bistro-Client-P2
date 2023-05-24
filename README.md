@@ -5,6 +5,8 @@
 * 75-2 Implement Cover With With Blur Parallax Using React Parallax
 * 75-3 Create Custom Hook Usemenu To Load Menu Data
 * 75-4 Display different menu category items with cover
+* 75-5 75-5 Simple Food Order page with tabs
+
 
 
 ## react-boilerplate-2
