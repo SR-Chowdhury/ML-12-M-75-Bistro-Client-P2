@@ -7,6 +7,7 @@
 * 75-4 Display different menu category items with cover
 * 75-5 75-5 Simple Food Order page with tabs
 * 75-6 Display food items on different tabs
+* 75-7 Select right tab based on the category
 
 
 

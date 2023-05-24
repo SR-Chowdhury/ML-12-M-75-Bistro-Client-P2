@@ -7,12 +7,16 @@ import FoodCard from '../../Components/FoodCard/FoodCard';
 import useMenu from '../../Hooks/useMenu';
 import OrderTab from '../../Components/OrderTab/OrderTab';
 import { useParams } from 'react-router-dom';
+import ReactHelmet from '../../Components/ReactHelmet/ReactHelmet';
 
 const Order = () => {
-
-    const [tabIndex, setTabIndex] = useState(0);
-    const [menu] = useMenu();
     const { category} = useParams();
+    const categories = ['salad', 'pizza', 'soup', 'dessert', 'drinks'];
+    const initialIndex = categories.indexOf(category);
+
+    const [tabIndex, setTabIndex] = useState(initialIndex);
+    const [menu] = useMenu();
+
 
     const drinks = menu?.filter(item => item.category === 'drinks');
     const dessert = menu?.filter(item => item.category === 'dessert');
@@ -22,6 +26,7 @@ const Order = () => {
 
     return (
         <div className='oderSection'>
+            <ReactHelmet title={'Order'}/>
             <Cover coverImg={orderCover} coverTitle={'Our shop'} coverSubTitle={'WOULD YOU LIKE TO TRY A DISH?'} />
             <div className='orderContainer my-20'>
                 <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
