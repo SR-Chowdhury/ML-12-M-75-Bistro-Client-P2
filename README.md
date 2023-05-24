@@ -6,6 +6,7 @@
 * 75-3 Create Custom Hook Usemenu To Load Menu Data
 * 75-4 Display different menu category items with cover
 * 75-5 75-5 Simple Food Order page with tabs
+* 75-6 Display food items on different tabs
 
 
 

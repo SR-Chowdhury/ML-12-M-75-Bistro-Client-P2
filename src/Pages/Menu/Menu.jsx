@@ -17,6 +17,7 @@ const Menu = () => {
     const salad = menu?.filter(item => item.category === 'salad');
     const soup = menu?.filter(item => item.category === 'soup');
     const pizza = menu?.filter(item => item.category === 'pizza');
+    const drinks = menu?.filter(item => item.category === 'drinks');
 
     // coverImg, coverTitle, coverSubTitle, items, subHeading, Heading, btnInfo
 
@@ -65,6 +66,14 @@ const Menu = () => {
                 coverSubTitle={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolorem velit, voluptate accusamus nemo aspernatur?'}
                 items = {pizza}
                 btnInfo = {'ORDER YOUR FAVOURITE PIZZA'}
+            />
+
+            <MenuCategory
+                coverImg = {pizzaImg}
+                coverTitle = {'drinks'}
+                coverSubTitle={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolorem velit, voluptate accusamus nemo aspernatur?'}
+                items = {drinks}
+                btnInfo = {'ORDER YOUR FAVOURITE DRINKS'}
             />
 
         </section>

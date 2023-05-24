@@ -28,7 +28,7 @@ const MenuCategory = ({ coverImg, coverTitle, coverSubTitle, items, subHeading, 
                     }
                 </div>
                 <div className='text-center mb-5'>
-                    <PrimaryBtn btnInfo={btnInfo} styles={customStyle} />
+                    <PrimaryBtn title={coverTitle} btnInfo={btnInfo} styles={customStyle} />
                 </div>
             </section>
         </div>
